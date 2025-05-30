@@ -33,7 +33,7 @@ const sections=$(currentSection).offset().top
 })
 jQuery(function(){
     $(".loading").fadeOut(3000,function(){
-        $("body").css({overflow:"auto"})
+        $("body").css({overflowY:"auto"})
     })
 })
  
