@@ -48,7 +48,7 @@ function scrollTracker(){
     const currentYscroll=window.scrollY;
     sections.forEach((sec)=>{
         const sectionHeight=sec.offsetHeight;
-        const sectionTop=sec.offsetTop;
+        const sectionTop=sec.offsetTop - 100;
         const sectionId=sec.getAttribute("id");
         const navLinks=document.querySelector(`.navbar ul a[href*="#${sectionId}"]`)
         if(currentYscroll>sectionTop && currentYscroll <= sectionTop + sectionHeight){
